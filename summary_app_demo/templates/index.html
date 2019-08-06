@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title> ML API </title>
+</head>
+<body style="background-color:#AAB7B8;">
+ <div>
+	<h1 style="color:#0B5345;" > News Summary</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="url" placeholder="Enter The News Url" style="width:500px;height:20px;" required="required" />
+      <button type="submit" style="background-color:#7FB3D5;color:black;border:none;border-radius: 2px;" ><b>Submit</b></button>
+    </form>
+
+   <br>
+   <p> -------------------------------------------------------------------------------------------------------
+       ----------------------------------------------------------------------------------------------------</p>
+   <br>
+   <br>
+   <p style="color:maroon";> <b> News URL: </b> <br>
+   {{ searched_url }}
+   <br><br>
+   <p style="color:#117A65";> <b> News Title: </b> <br>
+   {{ prediction_title }}
+   <br><br>
+   <p style="color:navy";> <b> Summarized News: </b> <br>
+   {{ prediction_summary }}
+   <br><br>
+   <p style="color:purple";> <b> Top Keywords: </b> <br>
+   {{ prediction_keywords }}
+
+ </div>
+
+
+</body>
+</html>

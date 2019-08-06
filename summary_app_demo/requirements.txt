@@ -1,0 +1,4 @@
+flask
+gensim
+pyLDAvis
+matplotlib
