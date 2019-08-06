@@ -1,11 +1,11 @@
 Instructions - 
 
-Step1: Clone the git repository
-git clone https://github.com/sayantaun/test1111.git
+Step1: Fork & clone the git repository
+git clone <URL>
 
-Step2: Install & start the docker
+Step2: Install & start the docker desktop
 
-Step3: Go to cloned directorty
+Step3: Go to cloned directory
 cd test1111
 
 Step4: Build the docker image
